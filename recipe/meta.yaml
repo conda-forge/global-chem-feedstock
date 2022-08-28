@@ -1,5 +1,5 @@
 {% set name = "global-chem" %}
-{% set version = "1.7.2.1" %}
+{% set version = "1.7.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/global_chem-{{ version }}.tar.gz
-  sha256: 1b0f1582a3f7010f6ef35fa9275666b3d5a29eb7bfca4fb60bd4ac4f6113b9c9
+  sha256: 5e256a0e8eed02793b27890d34c05800804c43ccda4a3098ae8deb2ee0546a0e
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://www.github.com/Sulstice/global-chem
-  summary: 'A Chemical Knowledge Graph of What is Common in the World.'
+  summary: A Chemical Knowledge Graph of What is Common in the World.
   license: MPL-2.0
   license_file:
     - LICENSE

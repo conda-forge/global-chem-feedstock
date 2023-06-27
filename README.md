@@ -1,11 +1,11 @@
-About global-chem
-=================
+About global-chem-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/global-chem-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.github.com/Sulstice/global-chem
 
 Package license: MPL-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/global-chem-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Chemical Knowledge Graph of What is Common in the World.
 

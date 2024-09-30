@@ -1,5 +1,5 @@
 {% set name = "global-chem" %}
-{% set version = "1.9.4" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/global_chem-{{ version }}.tar.gz
-  sha256: 33847fdf727fdb1c351ad3f93c546d0a5e8e9d056d94207acfe335222076bafb
+  sha256: 4a81aed3c6e4009591b8d95a81511d8e19ab69ff51bebb6be8548e2ff9d11492
 
 build:
   noarch: python

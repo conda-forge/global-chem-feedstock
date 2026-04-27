@@ -1,0 +1,44 @@
+schema_version: 1
+
+context:
+  name: global-chem
+  version: "1.10.0"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/global_chem-${{ version }}.tar.gz
+  sha256: 4a81aed3c6e4009591b8d95a81511d8e19ab69ff51bebb6be8548e2ff9d11492
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - global_chem
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  summary: A Chemical Knowledge Graph of What is Common in the World.
+  license: MPL-2.0
+  license_file:
+    - LICENSE
+  homepage: https://www.github.com/Sulstice/global-chem
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
